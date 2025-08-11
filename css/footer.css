@@ -1,0 +1,28 @@
+#footer {
+    background-color: var(--purple);
+    padding: 3rem 0;
+}
+
+#footer a {
+    color: var(--blanco);
+}
+
+.footer-logo {
+    width: 20rem;
+    margin: 0 auto 4rem auto;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .footer-logo {
+        margin: 0
+    }
+}
+
+@media (min-width: 768px) {
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

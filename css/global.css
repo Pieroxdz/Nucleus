@@ -1,0 +1,98 @@
+:root {
+    --primario: #6834a6;
+    --purple: #5a30a0;
+    --blanco: #FFF;
+    --negro: #000000;
+    --fuentePrincipal: 'Poppins', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--fuentePrincipal);
+    font-size: 1.6rem;
+    line-height: 1.8;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 900;
+    margin: 2rem 0;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 4.6rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+[class*="container"] {
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 90%;
+}
+
+
+[class*="item"] {
+    background-color: var(--blanco);
+    box-shadow: 0px 0px 15px 3px rgb(0 0 0 / .15);
+    padding: 2rem;
+    margin-bottom: 5rem;
+    transition: transform 300ms;
+}
+
+[class*="item"]:hover {
+    transform: scale(1.1);
+}
+
+.btn {
+    background-color: var(--primario);
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    color: var(--blanco);
+    margin-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+    .btn {
+        padding: 1rem 3rem;
+        display: inline-block;
+    }
+}

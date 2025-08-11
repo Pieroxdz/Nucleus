@@ -1,0 +1,45 @@
+#seguridad {
+    background-color: var(--primario);
+    padding: 20rem 0;
+    position: relative;
+    /* Misma cantidad de posicionamiento */
+    margin: 10rem 0;
+    overflow: hidden;
+}
+
+#seguridad::before,
+#seguridad::after {
+    content: "";
+    background-color: var(--blanco);
+    height: 20rem;
+    width: 120%;
+    position: absolute;
+}
+
+#seguridad::before {
+    /* Misma cantidad de margin */
+    top: -10rem;
+    left: 0;
+    transform: rotate(3deg);
+}
+
+#seguridad::after {
+    bottom: -10rem;
+    left: 0;
+    transform: rotate(-3deg);
+}
+
+#seguridad h2 {
+    color: var(--blanco);
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
+    .seguridad-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5rem;
+        align-items: center;
+    }
+}

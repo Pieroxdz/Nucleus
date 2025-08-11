@@ -1,0 +1,29 @@
+.logo {
+    cursor: pointer;
+    width: 15rem;
+    margin: 0 auto 3rem auto;
+}
+
+.main-nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--primario);
+}
+
+@media (min-width: 768px) {
+    .header-content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo {
+        margin: 0;
+    }
+
+    .main-nav ul {
+        flex-direction: row;
+        gap: 2rem;
+        color: var(--blanco);
+    }
+}
